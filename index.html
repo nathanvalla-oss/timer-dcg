@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Timer — Oral DCG Nathan</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#070c10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Timer DCG">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -348,6 +354,10 @@
   }
 
   update();
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/timer-dcg/sw.js');
+  }
 </script>
 </body>
 </html>

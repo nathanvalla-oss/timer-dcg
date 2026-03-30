@@ -1,0 +1,24 @@
+{
+  "name": "Timer DCG — Nathan Valla",
+  "short_name": "Timer DCG",
+  "description": "Timer oral DCG UE-13",
+  "start_url": "/timer-dcg/",
+  "display": "standalone",
+  "background_color": "#070c10",
+  "theme_color": "#070c10",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
